@@ -8,12 +8,12 @@ import random
 # parameters
 # neighbor radius: how close birds have to be to be classified as neighbors
 width, height = 800, 600
-neighbor_radius = 50
-sep_weight = 30 # larger because separation's raw magnitude is 1/distance, not distance
-aln_weight = .4
-coh_weight = .2
-speed_limit = 18
-min_speed = 4 # floor so alignment+cohesion+separation can't cancel out to a dead stop
+neighbor_radius = 30
+sep_weight = 32 # larger because separation's raw magnitude is 1/distance, not distance
+aln_weight = .1
+coh_weight = .1
+speed_limit = 14
+min_speed = 6 # floor so alignment+cohesion+separation can't cancel out to a dead stop
 boid_size = 3
 num_boids = 200
 
